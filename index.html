@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Krishna Kumar | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- SVG Noise Filter Overlaid -->
+    <svg style="display: none;">
+        <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch" />
+        </filter>
+    </svg>
+    <div class="noise"
+        style="background: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.75%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');">
+    </div>
+
+    <!-- Custom DRAG Cursor -->
+    <div class="cursor" id="cursor">DRAG</div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#home" class="navbar-brand">
+            <!-- <div class="logo-circle">G</div> -->
+            <span>G Krishna Kumar</span>
+        </a>
+        <div class="navbar-links">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="section">
+            <div class="section-split">
+                <div class="hero-left">
+                    <!-- <span class="badge">MCA Student</span> -->
+                    <h1 class="hero-title">Hello! I am<br>G Krishna Kumar</h1>
+                    <p class="hero-subtitle">Computer Science postgraduate skilled in React, Python, and cloud
+                        infrastructure. Building scalable web solutions.</p>
+                </div>
+                <div class="hero-right">
+                </div>
+            </div>
+
+            <div class="bottom-ui">
+                <div class="scroll-explore">
+                    <!-- <span>Scroll to explore</span> -->
+                    <div class="scroll-line"></div>
+                </div>
+                <div class="hero-socials">
+                    <a href="mailto:krishnasgk003@gmail.com">Email</a>
+                    <a href="https://linkedin.com/in/g-krishna-kumar-075a3437a" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Between Home and About -->
+        <!-- <div class="section-spacer"></div> -->
+
+        <!-- 2. ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="about-container">
+                <span class="section-label">About Me</span>
+                <h2 class="section-heading">Passionate Developer</h2>
+                <p class="about-text">
+                    I am G Krishna Kumar, a Computer Science postgraduate pursuing MCA at Lead College, Calicut
+                    University. I specialize in frontend technologies including React and HTML/CSS, with a solid
+                    understanding of cloud infrastructure and Python-based backend systems. I am also the author of
+                    two published books on technology and digital marketing.
+                </p>
+                <div class="stat-boxes">
+                    <div class="stat-box">
+                        <span class="stat-num">2</span>
+                        <span class="stat-label">Books Published</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">4+</span>
+                        <span class="stat-label">Projects Build</span>
+                    </div>
+                </div>
+                <div style="margin-top: 10px;">
+                    <a href="assets/My_resume.pdf" target="_blank" class="btn-download"
+                        style="display: inline-block;">View
+                        Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Between About and Projects -->
+        <!-- <div class="section-spacer"></div> -->
+
+        <!-- 3. PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <div class="projects-header">
+                <span class="section-label">MY WORK</span>
+                <h2 class="section-heading">Featured Projects</h2>
+            </div>
+
+            <div class="projects-row">
+                <!-- Card 1 -->
+                <div class="project-card"
+                    style="background-image: url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800');">
+                    <div class="card-content">
+                        <span class="card-category">E-Commerce</span>
+                        <h3 class="card-title">Smart Farming</h3>
+                        <p class="card-tech">The Smart Farming Platform is a comprehensive web application designed to
+                            facilitate seamless transactions between
+                            farmers and buyers, enhancing the agricultural market’s efficiency and accessibility. This
+                            platform provides distinct
+                            interfaces and functionalities for different user types, including farmers, buyers, and
+                            administrators, each tailored to
+                            meet their specific needs.
+                        </p>
+                        <a href="https://github.com/krishnakumar-31/farming_ecommerce" class="card-link">View →</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card"
+                    style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800');">
+                    <div class="card-content">
+                        <span class="card-category">AI / ML</span>
+                        <h3 class="card-title">Face Recognition</h3>
+                        <p class="card-tech">Developed an automated attendance system using Haar classifiers, KNN, CNN,
+                            SVM, GANs, and Gabor filters for realtime face recognition. The system replaces manual
+                            attendance with a digital, proxy-free process and generates
+                            attendance reports in Excel format. Tested for accuracy under varied illumination, head
+                            movement, and distance
+                            conditions, ensuring high reliability and cost efficiency.</p>
+                        <a href="#" class="card-link">View →</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card"
+                    style="background-image: url('https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=800');">
+                    <div class="card-content">
+                        <span class="card-category">Backend</span>
+                        <h3 class="card-title">Blood Bank API</h3>
+                        <p class="card-tech">The Blood Bank API is a RESTful backend system for managing donors, blood
+                            inventory, and hospital requests. It features a secure architecture with role-based access
+                            control and enables efficient tracking of blood stock levels, ensuring reliable and
+                            organized handling of critical healthcare data.</p>
+                        <a href="https://github.com/krishnakumar-31/e-commerce-backend" class="card-link">View →</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="project-card"
+                    style="background-image: url('https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800');">
+                    <div class="card-content">
+                        <span class="card-category">Deep Learning</span>
+                        <h3 class="card-title">AI Image Caption</h3>
+                        <p class="card-tech">The AI Image Caption Generator is a deep learning system that generates
+                            descriptive captions for images using a CNN–LSTM architecture, combining InceptionV3 for
+                            feature extraction and LSTM for sequence generation. It was trained on the Flickr8k dataset
+                            and evaluated using BLEU score to measure caption accuracy and quality.</p>
+                        <a href="https://github.com/krishnakumar-31/caption_generator" class="card-link">View →</a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="project-card"
+                    style="background-image: url('https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=800');">
+                    <div class="card-content">
+                        <span class="card-category">Game Dev</span>
+                        <h3 class="card-title">Tic-Tac-Toe AI</h3>
+                        <p class="card-tech">The Tic-Tac-Toe AI Web Game is a web-based application featuring an
+                            intelligent AI opponent designed to provide an interactive gameplay experience. It includes
+                            multiple difficulty levels, allowing users to engage with varying levels of challenge while
+                            demonstrating decision-making logic and game strategy implementation.</p>
+                        <a href="#" class="card-link">View →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Between Projects and Skills -->
+        <!-- <div class="section-spacer"></div> -->
+
+        <!-- 4. SKILLS SECTION -->
+        <section id="skills" class="section">
+            <div class="skills-header">
+                <span class="section-label">MY SKILLS</span>
+                <!-- <h2 class="section-heading">Tech Stack</h2> -->
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="assets/icons/html.png" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/css.png" alt="CSS">
+                    <span>CSS</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/vscode.png" alt="VS Code">
+                    <span>VS Code</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/javascript.jpg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/react.png" alt="React">
+                    <span>React</span>
+                </div>
+                <div class="skill-item">
+                    <img src="assets/icons/python.png" alt="Python">
+                    <span>Python</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Between Skills and Contact -->
+        <!-- <div class="section-spacer"></div> -->
+
+        <!-- 5. CONTACT SECTION -->
+        <section id="contact" class="section">
+            <span class="section-label">Contact</span>
+            <h2 class="section-heading">Get In Touch</h2>
+
+            <div class="section-split" style="margin-top: 30px;">
+                <div class="contact-left">
+                    <div class="contact-item">
+                        <span class="contact-icon">✉</span>
+                        <a href="mailto:krishnasgk003@gmail.com">krishnasgk003@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✆</span>
+                        <span>+91-9061289590</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Chengannur, Alappuzha, Kerala</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">in</span>
+                        <a href="https://linkedin.com/in/g-krishna-kumar-075a3437a"
+                            target="_blank">linkedin.com/in/g-krishna-kumar-075a3437a</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🌐</span>
+                        <a href="https://github.com/krishnakumar-31" target="_blank">github.com/krishnakumar-31</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                &copy; 2025 G Krishna Kumar. All rights reserved.
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // ── HOME: hero content rises on page load ──
+        gsap.from('#home .badge', {
+            opacity: 0, y: 50, duration: 1, delay: 0.2, ease: 'power4.out'
+        });
+        gsap.from('#home .hero-title', {
+            opacity: 0, y: 70, duration: 1.2, delay: 0.4, ease: 'power4.out'
+        });
+        gsap.from('#home .hero-subtitle', {
+            opacity: 0, y: 40, duration: 1, delay: 0.7, ease: 'power3.out'
+        });
+        gsap.from('#home .btn-primary', {
+            opacity: 0, y: 30, duration: 0.9, delay: 0.9, ease: 'power3.out'
+        });
+        gsap.from('#home .bottom-ui', {
+            opacity: 0, y: 20, duration: 0.9, delay: 1.1, ease: 'power3.out'
+        });
+
+        // ── ABOUT: split left and right on scroll ──
+        gsap.from('#about .about-image-col', {
+            scrollTrigger: {
+                trigger: '#about',
+                start: 'top 80%',
+                toggleActions: 'play reverse play reverse'
+            },
+            opacity: 0, x: -80, duration: 1.2, ease: 'power4.out'
+        });
+        gsap.from('#about .about-text-col .section-label', {
+            scrollTrigger: {
+                trigger: '#about',
+                start: 'top 80%',
+                toggleActions: 'play reverse play reverse'
+            },
+            opacity: 0, y: 30, duration: 0.8, delay: 0.2, ease: 'power3.out'
+        });
+        gsap.from('#about .about-text-col .section-heading', {
+            scrollTrigger: {
+                trigger: '#about',
+                start: 'top 80%',
+                toggleActions: 'play reverse play reverse'
+            },
+            opacity: 0, y: 50, duration: 1, delay: 0.3, ease: 'power4.out'
+        });
+        gsap.from('#about .about-text-col .about-text', {
+            scrollTrigger: {
+                trigger: '#about',
+                start: 'top 75%',
+                toggleActions: 'play reverse play reverse'
+            },
+            opacity: 0, y: 40, duration: 1, delay: 0.4, ease: 'power3.out'
+        });
+        gsap.from('#about .stat-box', {
+            scrollTrigger: {
+                trigger: '#about .stat-boxes',
+                start: 'top 85%',
+                toggleActions: 'play reverse play reverse'
+            },
+            opacity: 0, y: 50, duration: 0.8, stagger: 0.2, ease: 'power3.out'
+        });
+        gsap.from('#about .btn-download', {
+            scrollTrigger: {
+                trigger: '#about .stat-boxes',
+                start: 'top 85%',
+                toggleActions: 'play reverse play reverse'
+            },
+            opacity: 0, y: 30, duration: 0.8, delay: 0.4, ease: 'power3.out'
+        });
+
+        // ── PROJECTS ──
+        gsap.set('#projects .project-card', { opacity: 0, y: 80 });
+        ScrollTrigger.create({
+            trigger: '#projects',
+            start: 'top 90%',
+            onEnter: () => gsap.to('#projects .project-card', {
+                opacity: 1, y: 0, duration: 0.9, stagger: 0.15, ease: 'power4.out'
+            }),
+            onLeaveBack: () => gsap.set('#projects .project-card', { opacity: 0, y: 80 })
+        });
+
+        // ── SKILLS ──
+        gsap.set('#skills .skill-item', { opacity: 0, x: -50 });
+        gsap.set('#skills .cert-card', { opacity: 0, y: 40 });
+        gsap.set('#skills .section-heading', { opacity: 0, y: 50 });
+        ScrollTrigger.create({
+            trigger: '#skills',
+            start: 'top 90%',
+            onEnter: () => {
+                gsap.to('#skills .section-heading', { opacity: 1, y: 0, duration: 1, ease: 'power4.out' });
+                gsap.to('#skills .skill-item', { opacity: 1, x: 0, duration: 0.7, stagger: 0.12, ease: 'power3.out', delay: 0.2 });
+                gsap.to('#skills .cert-card', { opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: 'power3.out', delay: 0.3 });
+            },
+            onLeaveBack: () => {
+                gsap.set('#skills .section-heading', { opacity: 0, y: 50 });
+                gsap.set('#skills .skill-item', { opacity: 0, x: -50 });
+                gsap.set('#skills .cert-card', { opacity: 0, y: 40 });
+            }
+        });
+
+        // ── CONTACT ──
+        gsap.set('#contact .contact-item', { opacity: 0, y: 40 });
+        gsap.set('#contact .section-heading', { opacity: 0, y: 50 });
+        ScrollTrigger.create({
+            trigger: '#contact',
+            start: 'top 90%',
+            onEnter: () => {
+                gsap.to('#contact .section-heading', { opacity: 1, y: 0, duration: 1, ease: 'power4.out' });
+                gsap.to('#contact .contact-item', { opacity: 1, y: 0, duration: 0.7, stagger: 0.12, ease: 'power3.out', delay: 0.2 });
+            },
+            onLeaveBack: () => {
+                gsap.set('#contact .section-heading', { opacity: 0, y: 50 });
+                gsap.set('#contact .contact-item', { opacity: 0, y: 40 });
+            }
+        });
+    </script>
+</body>
+
+</html>
