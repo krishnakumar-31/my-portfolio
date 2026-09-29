@@ -96,7 +96,7 @@ function initApp() {
     // -------------------------
     // SCROLL ENTRANCE ANIMATIONS
     // -------------------------
-    const animatedSections = document.querySelectorAll('#home, #about, #projects, #skills, #contact');
+    const animatedSections = document.querySelectorAll('#home, #about, #experience, #projects, #skills, #contact');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
